@@ -1,0 +1,23 @@
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: auto;
+    background-color: #FFFAF0;
+    color: black;
+    align-items: center;
+    border-top: 3px solid $primaryColor;
+    padding-bottom: 5vh;
+
+    p {
+        grid-column: 2;
+        text-align: center;
+        margin: 0;
+        padding-top: 6vh;
+        
+    }
+    a {
+        grid-area: 2 / 2 / 3 / 3;
+        text-align: center;
+    }    
+}

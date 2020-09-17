@@ -1,0 +1,43 @@
+header {
+    background-color: $secondaryColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 3px solid $primaryColor;
+    width: 100vw;
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 2rem;
+        font-weight: 600;
+        span {
+            color: $primaryColor;
+        }
+    }
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 25%;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: rgb(204, 204, 204) !important;
+            font-weight: 600;
+        }
+        &:first-child {
+            color: $primaryColor;
+            font-weight: 600;
+            &:hover {
+                color: rgb(204, 204, 204); 
+            }
+        }
+
+    }
+
+}

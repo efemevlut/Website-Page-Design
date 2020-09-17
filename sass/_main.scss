@@ -1,0 +1,108 @@
+div {
+    display: flex;
+    flex-direction: column;
+
+
+    &:nth-of-type(1) {
+        background-image: url(./images/showcase.jpg);
+        text-align: center;
+        font-size: 1.8rem;
+        height: 60vh;
+        background-repeat: no-repeat;
+
+        h1 {
+            font-size: 3.5rem;
+            padding-top:12vh;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: 1.3rem;
+            padding:  5vh 9vw;
+            text-align: center;
+            margin: 0;
+
+        }
+
+    }
+
+    &:nth-of-type(2) {
+        background-color: $secondaryColor;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.3rem;
+        height: 15vh;
+        justify-content: space-around;
+        align-items: center;
+
+        #email {
+            height: 5vh;
+            width: 20vw;
+            font-size: 0.9rem;
+            
+            &:focus {
+                border: black;
+            }
+        }
+
+        button {
+            height: 6vh;
+            min-width: 8vw;
+            background-color: #A9508B;
+            color: white;
+            font-size: 0.8rem;
+            border: none;
+            position: relative;
+            top: -0.2vh;
+
+            &:visited {
+                height: 6vh;
+                width: 8vw;
+                background-color: #A9508B;
+                color: white;
+                font-size: 0.8rem;
+            }
+        }
+        
+    }
+}
+
+section {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    color: black;
+    background-color: #F4F4F4;
+    height: 45vh;
+    column-gap: 2vw;
+    
+    .card1 {
+        // padding: 0vh 8vw;
+        grid-column: 2;
+    }
+    
+    h3 {
+        font-size: 1rem;            
+    }
+
+    p {
+        font-size: 0.9rem;
+        text-align: center;
+        line-height: 3.6vh;
+    }
+
+    .cards {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: #F4F4F4;
+    }
+
+    img {
+        width: 6.5vw;
+        padding-top: 4vh;
+    }
+}
+
+
+           
+
