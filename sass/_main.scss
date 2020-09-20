@@ -7,7 +7,7 @@ div {
         background-image: url(./images/showcase.jpg);
         text-align: center;
         font-size: 1.8rem;
-        height: 60vh;
+        height: 50vh;
         background-repeat: no-repeat;
 
         h1 {
@@ -31,12 +31,12 @@ div {
         display: flex;
         flex-direction: row;
         font-size: 1.3rem;
-        height: 15vh;
+        height: 11vh;
         justify-content: space-around;
         align-items: center;
 
         #email {
-            height: 5vh;
+            height: 3vh;
             width: 20vw;
             font-size: 0.9rem;
             
@@ -46,14 +46,14 @@ div {
         }
 
         button {
-            height: 6vh;
+            height: 3.5vh;
             min-width: 8vw;
             background-color: #A9508B;
             color: white;
             font-size: 0.8rem;
             border: none;
             position: relative;
-            top: -0.2vh;
+            top: -0.1vh;
 
             &:visited {
                 height: 6vh;
@@ -71,8 +71,8 @@ section {
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
     color: black;
-    background-color: #F4F4F4;
-    height: 45vh;
+    background-color: $quaternaryColor;
+    height: 35vh;
     column-gap: 2vw;
     
     .card1 {
@@ -87,19 +87,37 @@ section {
     p {
         font-size: 0.9rem;
         text-align: center;
-        line-height: 3.6vh;
+        line-height: 3.0vh;
     }
 
     .cards {
         align-items: center;
         display: flex;
         flex-direction: column;
-        background-color: #F4F4F4;
     }
 
     img {
         width: 6.5vw;
         padding-top: 4vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .first {
+        height: 60vh !important;
+    }
+
+    .last {
+        height: 130vh;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        .cards {
+            grid-column: 1;
+        }
+        img {
+            width: 100px;
+        }
     }
 }
 

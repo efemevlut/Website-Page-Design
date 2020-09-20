@@ -1,0 +1,45 @@
+div {
+    display: flex;
+    flex-direction: row;
+    background-color: $secondaryColor;
+    font-size: 1.3rem;
+    height: 11vh;
+    justify-content: space-around;
+    align-items: center;
+    
+    #email {
+        height: 3vh;
+        width: 20vw;
+        font-size: 0.9rem;
+        
+        &:focus {
+            border: black;
+        }
+    }
+
+    button {
+        height: 3.5vh;
+        min-width: 8vw;
+        background-color: #A9508B;
+        color: white;
+        font-size: 0.8rem;
+        border: none;
+        position: relative;
+        top: -0.1vh;
+
+        &:visited {
+            height: 6vh;
+            width: 8vw;
+            background-color: #A9508B;
+            color: white;
+            font-size: 0.8rem;
+        }
+    }
+}   
+
+@media (max-width: 768px) {
+    div {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+}    
