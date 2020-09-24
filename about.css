@@ -351,7 +351,7 @@ header {
   align-items: center;
   justify-content: space-around;
   border-bottom: 3px solid #A9508B;
-  width: 100vw;
+  width: 100%;
 }
 header h1 {
   font-size: 1rem;
@@ -432,8 +432,17 @@ div button:visited {
 
 @media (max-width: 768px) {
   div {
-    flex-direction: column;
-    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column !important;
+    height: 20vh !important;
+  }
+  div #email {
+    height: 6vh !important;
+    width: 70vw !important;
+  }
+  div button {
+    height: 6.5vh !important;
+    width: 20vw !important;
   }
 }
 main {
@@ -444,6 +453,7 @@ main {
   line-height: 1.5rem;
   font-size: 0.9rem;
   column-gap: 50px;
+  height: 63.5%;
 }
 main h3 {
   padding-top: 0;
@@ -481,10 +491,24 @@ main #item3 p {
     flex-direction: column;
     justify-content: space-around;
     padding: 30px;
-    height: 90vh;
+    height: 120vh;
   }
   main #item1 {
-    height: 20vh;
+    height: 40vh;
+  }
+  main #item2 {
+    height: 220px;
+    position: relative !important;
+    top: 0px !important;
+  }
+}
+@media (max-width: 400px) {
+  main {
+    height: 140vh !important;
+  }
+
+  #item2 {
+    height: 35vh !important;
   }
 }
 footer {

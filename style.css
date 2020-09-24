@@ -498,6 +498,20 @@ section img {
   .last img {
     width: 100px;
   }
+
+  .newsletter {
+    display: flex;
+    flex-direction: column !important;
+    height: 20vh !important;
+  }
+  .newsletter #email {
+    height: 6vh !important;
+    width: 70vw !important;
+  }
+  .newsletter button {
+    height: 6.5vh !important;
+    width: 20vw !important;
+  }
 }
 footer {
   display: grid;

@@ -2,7 +2,6 @@ div {
     display: flex;
     flex-direction: column;
 
-
     &:nth-of-type(1) {
         background-image: url(./images/showcase.jpg);
         text-align: center;
@@ -118,6 +117,22 @@ section {
         img {
             width: 100px;
         }
+    }
+
+    .newsletter {
+        display: flex;
+        flex-direction: column !important;
+        height: 20vh !important;
+
+        #email {
+            height: 6vh !important;
+            width: 70vw !important;
+        }
+
+        button {
+            height: 6.5vh !important;
+            width: 20vw !important;
+        }        
     }
 }
 

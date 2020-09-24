@@ -39,7 +39,18 @@ div {
 
 @media (max-width: 768px) {
     div {
-        flex-direction: column;
-        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column !important;
+        height: 20vh !important;
+
+        #email {
+            height: 6vh !important;
+            width: 70vw !important;
+        }
+
+        button {
+            height: 6.5vh !important;
+            width: 20vw !important;
+        }        
     }
-}    
+}       

@@ -351,7 +351,7 @@ header {
   align-items: center;
   justify-content: space-around;
   border-bottom: 3px solid #A9508B;
-  width: 100vw;
+  width: 100%;
 }
 header h1 {
   font-size: 1rem;
@@ -432,8 +432,17 @@ div button:visited {
 
 @media (max-width: 768px) {
   div {
-    flex-direction: column;
-    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column !important;
+    height: 20vh !important;
+  }
+  div #email {
+    height: 6vh !important;
+    width: 70vw !important;
+  }
+  div button {
+    height: 6.5vh !important;
+    width: 20vw !important;
   }
 }
 main {
@@ -505,69 +514,54 @@ main #item4 #submit:visited {
 
 @media (max-width: 768px) {
   main {
-    display: grid;
-    background-color: #F4F4F4;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr auto auto auto auto;
-    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 1100px;
   }
   main h4 {
-    grid-area: 1/1/2/2;
-    font-size: 1.5rem;
-    padding-left: 40px;
+    text-align: center;
   }
-  main #item1 {
-    grid-area: 2/1/3/2;
-    background-color: #E6E6E6;
-    height: 20vh;
-    padding: 0 20px;
-    border: 1px solid #bdbcbc;
-    position: static;
-  }
-  main #item2 {
-    grid-area: 3/1/4/2;
-    background-color: #E6E6E6;
-    height: 20vh;
-    padding: 0 20px;
-    border: 1px solid #bdbcbc;
-  }
-  main #item3 {
-    grid-area: 4/1/5/2;
-    background-color: #E6E6E6;
-    height: 20vh;
-    padding: 0 20px;
-    border: 1px solid #bdbcbc;
-    margin-bottom: 20px;
+  main section {
+    position: static !important;
+    height: 22vh !important;
   }
   main #item4 {
-    grid-area: 5/1/6/2;
-    background-color: #35424A;
-    color: white;
-    padding: 1vh 2vw;
-    margin-top: 20px;
-    height: 32vh;
+    height: 43vh !important;
+    padding-left: 20px !important;
   }
-  main #item4 input {
-    width: 80vw;
-    height: 3vh;
-  }
-  main #item4 textarea {
-    width: 80vw;
-  }
-  main #item4 #submit {
-    height: 3.5vh;
-    width: 15vw;
-    background-color: #A9508B;
-    color: white;
-    font-size: 0.8rem;
-    border: none;
-  }
-  main #item4 #submit:visited {
+  main textarea {
+    width: 39.5vh;
     height: 6vh;
-    width: 15vw;
-    background-color: #A9508B;
-    color: white;
-    font-size: 0.8rem;
+  }
+  main input {
+    width: 85vw !important;
+    height: 6vh !important;
+  }
+}
+@media (max-width: 400px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    height: 1200px;
+  }
+  main h4 {
+    text-align: center;
+  }
+  main section {
+    position: static !important;
+    height: 29vh !important;
+  }
+  main #item4 {
+    height: 50vh !important;
+    padding-left: 20px !important;
+  }
+  main textarea {
+    width: 39.5vh;
+    height: 6vh;
+  }
+  main input {
+    width: 85vw !important;
+    height: 6vh !important;
   }
 }
 footer {

@@ -6,6 +6,7 @@ main {
     line-height: 1.5rem;
     font-size: 0.9rem;
     column-gap: 50px;
+    height: 63.5%;
 
     h3 {
         padding-top: 0;
@@ -48,10 +49,26 @@ main {
         flex-direction: column;
         justify-content: space-around;
         padding: 30px;
-        height: 90vh;
+        height: 120vh;
         
         #item1 {
-            height: 20vh;
+            height: 40vh;
         }
+
+        #item2 {
+            height: 220px;
+            position: relative !important;
+            top: 0px !important;
+        }
+
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        height: 140vh !important;
+    }
+    #item2 {
+        height: 35vh !important;
     }
 }
